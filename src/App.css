@@ -8,8 +8,14 @@
 
 .application-container-elements {
     background-color: #FFFFFF;
-    padding: 10px 50px 0px 50px;
+    padding: 10px 20px 0px 20px;
     border-radius: 5px;
+}
+
+.application-container-subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -20,4 +26,27 @@ h2 {
 h3 {
     margin-top: 1px;
     color: #000000;
+}
+
+.modal-balance-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+}
+
+.budget-amount-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.budget-amount-title {
+    margin-right: 5px;
+    font-weight: 900 !important;
+}
+
+.budget-amount {
+    color: rgb(2, 80, 2);
+    font-weight: 900 !important;
 }
