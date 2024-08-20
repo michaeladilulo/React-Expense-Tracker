@@ -1,1 +1,23 @@
+.application-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
 
+.application-container-elements {
+    background-color: #FFFFFF;
+    padding: 10px 50px 0px 50px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 0px;
+    color: darkgreen;
+}
+
+h3 {
+    margin-top: 1px;
+    color: #000000;
+}
