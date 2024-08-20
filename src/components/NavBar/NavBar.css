@@ -1,0 +1,12 @@
+.navigation-elements-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+}
+
+.navigation-element {
+    margin: 0px;
+    padding: 12px;
+    color: #000000;
+}
