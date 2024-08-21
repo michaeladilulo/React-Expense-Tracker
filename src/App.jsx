@@ -1,10 +1,17 @@
-import {useState} from 'react';
+import { useState, useEffect } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import BalanceForm from './components/BalanceForm/BalanceForm'
 import './App.css'
 
 function App() {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(() => {
+    const data = window.localStorage.getItem('EXPENSE_APP');
+    return data ? JSON.parse(data) : 0;
+  })
+
+  useEffect(() => {
+    window.localStorage.setItem('EXPENSE_APP', JSON.stringify(amount))
+  }, [amount]);
 
   return (
     <>
