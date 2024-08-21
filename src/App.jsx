@@ -1,8 +1,10 @@
+import {useState} from 'react';
 import NavBar from './components/NavBar/NavBar';
 import BalanceForm from './components/BalanceForm/BalanceForm'
 import './App.css'
 
 function App() {
+  const [amount, setAmount] = useState(0);
 
   return (
     <>
@@ -16,10 +18,10 @@ function App() {
             <div className='modal-balance-form-container'>
               <div className='budget-amount-container'>
                 <p className='budget-amount-title'>Budget:</p>
-                <span className='budget-amount'>$</span><span className='budget-amount'>0</span>
+                <span className='budget-amount'>$</span><span className='budget-amount'>{amount}</span>
               </div>
               
-              <BalanceForm />
+              <BalanceForm amount={amount} setAmount={setAmount}/>
             </div>
         </div>
       </div>

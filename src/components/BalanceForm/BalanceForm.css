@@ -4,3 +4,12 @@
     background-color: rgb(2, 80, 2);
     border-radius: 5px;
 }
+
+input {
+    max-width: 100px;
+}
+
+.add-budget-container {
+    display: flex;
+    justify-content: space-between;
+}
