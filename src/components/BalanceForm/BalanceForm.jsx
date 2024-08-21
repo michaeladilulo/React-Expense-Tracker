@@ -45,7 +45,7 @@ const BalanceForm = ({ amount, setAmount }) => {
   
     return (
       <div className='balance-form-container'>
-        <button className='balance-form-modal-button' onClick={openModal}>Add Budget</button>
+        <button className='balance-form-modal-button' onClick={openModal}>Set Starting Budget</button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
