@@ -1,5 +1,6 @@
-import React, {useCallback, useState} from 'react';
+import React from 'react';
 import Modal from 'react-modal';
+import ExpenseInput from '../ExpenseInput/ExpenseInput'
 import './BalanceForm.css'
 
 const customStyles = {
@@ -63,6 +64,11 @@ const BalanceForm = ({ amount, setAmount }) => {
             </div>
           </form>
         </Modal>
+
+        <div className='expense-budget-input-container'>
+        <ExpenseInput />
+
+        </div>
       </div>
     );
 }

@@ -1,0 +1,15 @@
+input {
+    background-color: white;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-left: 2px solid red;
+    min-width: 125px;
+    min-height: 30px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Very light shadow */
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Very light shadow */
+}

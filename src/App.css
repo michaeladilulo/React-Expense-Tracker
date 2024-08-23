@@ -44,9 +44,11 @@ h3 {
 .budget-amount-title {
     margin-right: 5px;
     font-weight: 900 !important;
+    margin-top: -75px;
 }
 
 .budget-amount {
     color: rgb(2, 80, 2);
     font-weight: 900 !important;
+    margin-top: -90px;
 }
