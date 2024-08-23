@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import BalanceForm from './components/BalanceForm/BalanceForm'
+import ExpenseInput from './components/ExpenseInput/ExpenseInput'
+import BudgetInput from './components/BudgetInput/BudgetInput'
 import './App.css'
 
 function App() {
@@ -30,6 +32,10 @@ function App() {
               
               <BalanceForm amount={amount} setAmount={setAmount}/>
             </div>
+      <div className='expense-budget-input-container'>
+        <ExpenseInput />
+        <BudgetInput />
+        </div>
         </div>
       </div>
     </>
