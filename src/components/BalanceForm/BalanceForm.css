@@ -1,8 +1,9 @@
 .balance-form-modal-button {
-    padding: 7px;
+    padding: 4px 8px;
     outline: none;
     background-color: rgb(2, 80, 2);
     border-radius: 5px;
+    font-family: 'Poppins';
 }
 
 input {
@@ -12,4 +13,30 @@ input {
 .add-budget-container {
     display: flex;
     justify-content: space-between;
+}
+
+.please-add-budget-title {
+    color: rgb(2, 80, 2) !important;
+}
+
+.close-modal-container {
+    margin-top: 20px;
+    margin-bottom: -15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-modal-button {
+    background-color: red;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+}
+
+.add-budget-button {
+    background-color: rgb(2, 80, 2);
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 6px;
+    font-family: 'Poppins';
 }

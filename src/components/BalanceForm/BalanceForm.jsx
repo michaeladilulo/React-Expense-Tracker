@@ -53,14 +53,16 @@ const BalanceForm = ({ amount, setAmount }) => {
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Please Add Budget</h2>
-          <button onClick={closeModal}>close</button>
+          <h2 className='please-add-budget-title' ref={(_subtitle) => (subtitle = _subtitle)}>Please Add Budget</h2>
           <div>I am a modal</div>
           <form onSubmit={handleSubmit}>
             <div className='add-budget-container'>
               <input type='number' defaultValue={amount}/>
-              <button type='submit'>Add Budget</button>
+              <button className='add-budget-button' type='submit'>Add Budget</button>
             </div>
+            <span className='close-modal-container'>
+              <button className='close-modal-button' onClick={closeModal}>close</button>
+            </span>
           </form>
         </Modal>
       </div>
